@@ -155,8 +155,8 @@ const Resume = () => {
               <Button
                 variant="contained"
                 startIcon={<PictureAsPdfIcon />}
-                href="/files/Tamima_CV.pdf"
-                download="Tamima_CV.pdf"
+                href="/files/cv-of-Afiqur-Rahman.pdf"
+                download="cv-of-Afiqur-Rahman.pdf"
                 sx={{
                   bgcolor: 'primary.main',
                   color: 'white',
