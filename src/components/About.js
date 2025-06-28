@@ -129,8 +129,7 @@ const About = () => {
         minHeight: '100vh',
         display: 'flex',
         alignItems: 'center',
-        py: 8,
-
+        py: { xs: 4, sm: 6, md: 8 },
       }}
     >
       <Container maxWidth="lg">
@@ -143,9 +142,10 @@ const About = () => {
             variant="h2"
             sx={{
               textAlign: 'center',
-              mb: 6,
+              mb: { xs: 4, sm: 6 },
               color: 'primary.main',
               fontWeight: 700,
+              fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
               position: 'relative',
               '&:after': {
                 content: '""',
@@ -163,7 +163,7 @@ const About = () => {
             About Me
           </Typography>
 
-          <Grid container spacing={4}>
+          <Grid container spacing={{ xs: 2, sm: 3, md: 4 }}>
             {/* Profile Section */}
             <Grid item xs={12} md={4}>
               <motion.div
@@ -351,8 +351,8 @@ const About = () => {
                 <Paper
                   elevation={3}
                   sx={{
-                    p: 4,
-                    mb: 4,
+                    p: { xs: 2, sm: 3, md: 4 },
+                    mb: { xs: 3, sm: 4 },
                     borderRadius: 2,
                     bgcolor: 'background.paper',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
@@ -361,9 +361,10 @@ const About = () => {
                   <Typography
                     variant="h5"
                     sx={{
-                      mb: 3,
+                      mb: { xs: 2, sm: 3 },
                       color: 'primary.main',
                       fontWeight: 600,
+                      fontSize: { xs: '1.25rem', sm: '1.5rem' },
                       position: 'relative',
                       '&:after': {
                         content: '""',
@@ -395,11 +396,14 @@ const About = () => {
                             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
                           )}
                         </TimelineSeparator>
-                        <TimelineContent sx={{ ml:6 }}>
+                        <TimelineContent sx={{ 
+                          ml: { xs: 2, sm: 4, md: 6 },
+                          py: { xs: 1, sm: 2 }
+                        }}>
                           <Paper
                             elevation={1}
                             sx={{
-                              p: 2,
+                              p: { xs: 1.5, sm: 2 },
                               borderRadius: 2,
                               bgcolor: 'rgba(0,0,0,0.02)',
                               transition: 'all 0.3s ease',
@@ -414,6 +418,8 @@ const About = () => {
                               sx={{
                                 color: 'primary.main',
                                 fontWeight: 600,
+                                fontSize: { xs: '1rem', sm: '1.25rem' },
+                                mb: { xs: 0.5, sm: 1 }
                               }}
                             >
                               {exp.title}
@@ -422,12 +428,22 @@ const About = () => {
                               variant="subtitle2"
                               sx={{
                                 color: 'text.secondary',
-                                mb: 1,
+                                mb: { xs: 0.5, sm: 1 },
+                                fontSize: { xs: '0.75rem', sm: '0.875rem' }
                               }}
                             >
                               {exp.company} | {exp.period}
                             </Typography>
-                            <Typography sx={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit' }} variant="body2" color="text.primary">
+                            <Typography 
+                              sx={{ 
+                                whiteSpace: 'pre-wrap', 
+                                fontFamily: 'inherit',
+                                fontSize: { xs: '0.75rem', sm: '0.875rem' },
+                                lineHeight: { xs: 1.4, sm: 1.5 }
+                              }} 
+                              variant="body2" 
+                              color="text.primary"
+                            >
                               {exp.description}
                             </Typography>
                           </Paper>
@@ -441,7 +457,7 @@ const About = () => {
                 <Paper
                   elevation={3}
                   sx={{
-                    p: 4,
+                    p: { xs: 2, sm: 3, md: 4 },
                     borderRadius: 2,
                     bgcolor: 'background.paper',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
@@ -450,9 +466,10 @@ const About = () => {
                   <Typography
                     variant="h5"
                     sx={{
-                      mb: 3,
+                      mb: { xs: 2, sm: 3 },
                       color: 'primary.main',
                       fontWeight: 600,
+                      fontSize: { xs: '1.25rem', sm: '1.5rem' },
                       position: 'relative',
                       '&:after': {
                         content: '""',
@@ -484,11 +501,14 @@ const About = () => {
                             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
                           )}
                         </TimelineSeparator>
-                        <TimelineContent>
+                        <TimelineContent sx={{ 
+                          ml: { xs: 2, sm: 4, md: 6 },
+                          py: { xs: 1, sm: 2 }
+                        }}>
                           <Paper
                             elevation={1}
                             sx={{
-                              p: 2,
+                              p: { xs: 1.5, sm: 2 },
                               borderRadius: 2,
                               bgcolor: 'rgba(0,0,0,0.02)',
                               transition: 'all 0.3s ease',
@@ -503,6 +523,8 @@ const About = () => {
                               sx={{
                                 color: 'primary.main',
                                 fontWeight: 600,
+                                fontSize: { xs: '1rem', sm: '1.25rem' },
+                                mb: { xs: 0.5, sm: 1 }
                               }}
                             >
                               {exp.title}
@@ -511,12 +533,22 @@ const About = () => {
                               variant="subtitle2"
                               sx={{
                                 color: 'text.secondary',
-                                mb: 1,
+                                mb: { xs: 0.5, sm: 1 },
+                                fontSize: { xs: '0.75rem', sm: '0.875rem' }
                               }}
                             >
                               {exp.company} | {exp.period}
                             </Typography>
-                            <Typography variant="body2" color="text.primary">
+                            <Typography 
+                              sx={{ 
+                                whiteSpace: 'pre-wrap', 
+                                fontFamily: 'inherit',
+                                fontSize: { xs: '0.75rem', sm: '0.875rem' },
+                                lineHeight: { xs: 1.4, sm: 1.5 }
+                              }} 
+                              variant="body2" 
+                              color="text.primary"
+                            >
                               {exp.description}
                             </Typography>
                           </Paper>
