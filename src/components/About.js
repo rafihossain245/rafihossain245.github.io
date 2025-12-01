@@ -44,7 +44,7 @@ import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 const About = () => {
   const experiences = [
     {
-      title: 'Full Stack Developer (PHP-Laravel)',
+      title: 'Full Stack Developer (Remote)',
       company: 'Vemate',
       period: 'May 2025 - Present',
       description:
@@ -59,11 +59,11 @@ const About = () => {
           as settings, item stock, and general help through natural language interactions.
         
         Skills:  PHP · CodeIgniter · ERP & Saas Customization· ZATCA Integration · Docker · MySQL · Linux Server Management`,
-        
+
       icon: <WorkIcon />,
     },
     {
-      title: 'Full Stack Developer (PHP-Laravel)',
+      title: 'Full Stack Developer',
       company: 'Xgenious',
       period: 'June 2023 - April 2025',
       description:
@@ -79,11 +79,11 @@ const About = () => {
           environments, ensuring correct permissions, environment setup, and optimization.
         
         Skills:  PHP · Laravel · MySQL · Server Configuration · VPS/WHM · Communication · Problem Solving · Collaboration`,
-        
+
       icon: <WorkIcon />,
     },
     {
-      title: 'Web Developer',
+      title: 'Full Stack Developer',
       company: 'RS Software',
       period: 'Sep 2021 - May 2023',
       description:
@@ -417,7 +417,7 @@ const About = () => {
                             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
                           )}
                         </TimelineSeparator>
-                        <TimelineContent sx={{ 
+                        <TimelineContent sx={{
                           ml: { xs: 2, sm: 4, md: 6 },
                           py: { xs: 1, sm: 2 }
                         }}>
@@ -455,14 +455,14 @@ const About = () => {
                             >
                               {exp.company} | {exp.period}
                             </Typography>
-                            <Typography 
-                              sx={{ 
-                                whiteSpace: 'pre-wrap', 
+                            <Typography
+                              sx={{
+                                whiteSpace: 'pre-wrap',
                                 fontFamily: 'inherit',
                                 fontSize: { xs: '0.75rem', sm: '0.875rem' },
                                 lineHeight: { xs: 1.4, sm: 1.5 }
-                              }} 
-                              variant="body2" 
+                              }}
+                              variant="body2"
                               color="text.primary"
                             >
                               {exp.description}
@@ -522,7 +522,7 @@ const About = () => {
                             <TimelineConnector sx={{ bgcolor: 'primary.main' }} />
                           )}
                         </TimelineSeparator>
-                        <TimelineContent sx={{ 
+                        <TimelineContent sx={{
                           ml: { xs: 2, sm: 4, md: 6 },
                           py: { xs: 1, sm: 2 }
                         }}>
@@ -560,14 +560,14 @@ const About = () => {
                             >
                               {exp.company} | {exp.period}
                             </Typography>
-                            <Typography 
-                              sx={{ 
-                                whiteSpace: 'pre-wrap', 
+                            <Typography
+                              sx={{
+                                whiteSpace: 'pre-wrap',
                                 fontFamily: 'inherit',
                                 fontSize: { xs: '0.75rem', sm: '0.875rem' },
                                 lineHeight: { xs: 1.4, sm: 1.5 }
-                              }} 
-                              variant="body2" 
+                              }}
+                              variant="body2"
                               color="text.primary"
                             >
                               {exp.description}
