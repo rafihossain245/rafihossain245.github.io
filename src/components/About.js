@@ -44,20 +44,41 @@ import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 const About = () => {
   const experiences = [
     {
-      title: 'Technical Support Engineer (PHP-Laravel)',
-      company: 'Xgenious',
-      period: 'June 2023 - Present',
+      title: 'Full Stack Developer (PHP-Laravel)',
+      company: 'Vemate',
+      period: 'May 2025 - Present',
       description:
         `Work area:
           Responsibilities include:
-          •	Help a variety of 10+ Laravel script and 500+ active users across the world through ticket based systems.
-          •	Guide customers to use specific products by answering their questions and providing useful information and instructions.
-          •	Diagnose problems that customers have on their sites and offer solutions.
-          •	Troubleshoot and investigate issues to create detailed bug reports on GitHub repositories.
-          •	Script installation and Server (VPS, WHM) management and configurations(MySQL Root Password and Cron Job etc.) support provided.
-          •	Write documentation and create tutorial videos for customer.
+          •	Managing, maintenance and module wise feature implement PerfexCRM application. 
+          • Integrated ZATCA e-Invoicing and worked with extending ERP & SaaS modules functionalities. 
+          • Fixing existing bugs, optimizing performance, and improving system stability across modules. 
+          • Implementing new features module-wise using PerfexCRM’s hook architecture (do_action, apply_filters) to 
+          ensure upgrade-safe development without modifying core code. 
+          • Developed and integrated an AI-powered assistant (AI Bot) enabling users to query system information such 
+          as settings, item stock, and general help through natural language interactions.
         
-        Skills: Bug Reporting · Customer Support · Server Configuration`,
+        Skills:  PHP · CodeIgniter · ERP & Saas Customization· ZATCA Integration · Docker · MySQL · Linux Server Management`,
+        
+      icon: <WorkIcon />,
+    },
+    {
+      title: 'Full Stack Developer (PHP-Laravel)',
+      company: 'Xgenious',
+      period: 'June 2023 - April 2025',
+      description:
+        `Work area:
+          Responsibilities include:
+          •	Managed, maintained, and enhanced Laravel-based applications including bug fixing, feature development, 
+          REST API creation, and web module improvements. 
+          • Collaborated with mobile app, UI/UX, and frontend teams for API integration and design implementation, 
+          while gathering and clarifying client requirements. 
+          • Integrated third-party APIs (payment gateways, SMS/email services, authentication providers) into Laravel 
+          applications. 
+          Installed, configured, and deployed Laravel applications on VPS, WHM/cPanel, and shared hosting 
+          environments, ensuring correct permissions, environment setup, and optimization.
+        
+        Skills:  PHP · Laravel · MySQL · Server Configuration · VPS/WHM · Communication · Problem Solving · Collaboration`,
         
       icon: <WorkIcon />,
     },
